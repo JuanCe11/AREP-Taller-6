@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css"
+	href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" action="add">
+					<span class="login100-form-title">
+						Ingrese un registro para el log
+					</span>
+					<div class="wrap-input100">
+						<input type='text' name='list' class="input100">
+						<span class="focus-input100"></span>
+					</div>
+					<div class="container-ogin100-form-btn">
+						<button class="login100-form-btn">Enviar log</button>
+					</div>
+				</form>
+				<form class="login100-form validate-form" action="find">
+					<span class="login100-form-title">
+						#if(!$valid)
+							<span class="login100-form-title">
+								$message
+							</span>
+						#end
+					</span>
+					<div class="container-ogin100-form-btn">
+						<button class="login100-form-btn">Consultar log</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+</body>
+</html>
