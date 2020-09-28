@@ -25,7 +25,7 @@ public class MyServer {
 
 		port(getPort());
 		staticFiles.location("/public");
-		secure("keystores/serverpair.p12", "123456", null, null);
+		secure("keystores/ecikeystore.p12", "19990611", null, null);
 
 		get("/", (req, res) -> {
 			Map<String, Object> lm_model;
@@ -66,6 +66,7 @@ public class MyServer {
 
 				res.type("application/json");
 				ls_res = URLReader.readURL("https://ec2-3-84-50-1.compute-1.amazonaws.com:35000/find", true);
+
 				if (StringUtil.isBlank(ls_res))
 					ls_res = "{\"message\": \"Error en la consulta\"}";
 
@@ -87,5 +88,4 @@ public class MyServer {
 		}
 		return 5000;
 	}
-
 }
