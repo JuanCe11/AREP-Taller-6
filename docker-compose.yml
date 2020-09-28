@@ -1,0 +1,13 @@
+version: '2'
+services:
+  web:
+    image: juance11/taller-6-consult
+    container_name: web
+    ports:
+      - "35001:6000"
+  web2:
+    image: juance11/taller-6-2
+    container_name: web2
+    ports:
+      - "35000:6000" 
+  

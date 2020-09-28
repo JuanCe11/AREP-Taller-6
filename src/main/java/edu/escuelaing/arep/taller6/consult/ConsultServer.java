@@ -31,30 +31,57 @@ public class ConsultServer {
 
 		});
 	}
-	
+
 	/**
-	 * Reads a response from the server
+	 * Reads an response from the server
 	 * 
 	 * @param as_site url to read
 	 */
-	private static String readURL(String as_site) {
-        String ls_resData = null;
-        try {
-        	URL siteURL = new URL(as_site);
-        	URLConnection urlConnection = siteURL.openConnection();
-        	BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+	public static String readURL(String as_site) {
+		String ls_resData;
+		ls_resData = null;
+		try {
+			URL lu_siteURL;
 
-            String inputLine = null;
-            ls_resData = "";
-            while ((inputLine = reader.readLine()) != null) {
-                ls_resData += inputLine;
-            }
-        } catch (IOException x) {
-            ls_resData = "";
-            System.err.println(x);
-        }
-        return ls_resData;
-    }
+			lu_siteURL = new URL(as_site);
+
+			if (lu_siteURL != null) {
+				URLConnection luc_urlConnection;
+
+				luc_urlConnection = lu_siteURL.openConnection();
+
+				if (luc_urlConnection != null) {
+					InputStreamReader lis_input;
+
+					lis_input = new InputStreamReader(luc_urlConnection.getInputStream());
+
+					if (lis_input != null) {
+						BufferedReader lbr_reader;
+
+						lbr_reader = new BufferedReader(lis_input);
+
+						if (lbr_reader != null) {
+							String ls_line;
+
+							ls_line = null;
+
+							ls_resData = "";
+
+							while ((ls_line = lbr_reader.readLine()) != null)
+								ls_resData += ls_line;
+
+						}
+					}
+
+				}
+			}
+		} catch (IOException x) {
+			ls_resData = "";
+			x.printStackTrace();
+		}
+
+		return ls_resData;
+	}
 
 	/**
 	 * Specifies the port on which the service will run.
