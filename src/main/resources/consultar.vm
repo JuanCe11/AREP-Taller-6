@@ -14,17 +14,12 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="login" method="POST">
+				<form class="login100-form validate-form" action="log">
 					<span class="login100-form-title">
-						Ingrese usuario y contraseña
+						Has click en consultar log para ver la informacion del log
 					</span>
-					<div class="wrap-input100">
-						<input type='text' name='usr' placeholder="username" class="input100">
-						</br>
-						<input type='password' name='pass' placeholder="password" class="input100">
-					</div>
 					<div class="container-ogin100-form-btn">
-						<button class="login100-form-btn">Enviar log</button>
+						<button class="login100-form-btn">Consultar log</button>
 					</div>
 				</form>
 				<div class="login100-form validate-form">	
