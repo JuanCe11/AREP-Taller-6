@@ -4,7 +4,7 @@ Taller 6 - AREP
 
 Aplicacion distribuida segura en todos sus frentes
 
- [![Deployed to AWS](https://github.com/JuanCe11/AREP-Taller-5/blob/master/BotonAWS.png)](http://ec2-100-26-178-129.compute-1.amazonaws.com:35004/)
+ [![Deployed to AWS](https://github.com/JuanCe11/AREP-Taller-5/blob/master/BotonAWS.png)](https://ec2-100-26-178-129.compute-1.amazonaws.com:35004/)
  
  [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/JuanCe11/AREP-Taller-6)
 
@@ -29,7 +29,7 @@ git clone https://github.com/JuanCe11/AREP-Taller-6.git
 
 ### Instalacion 
 
-Para la correcta instalación se debe primero clonar el repositorio como se indicó anteriormente, después se ingresa al directorio del proyecto y para ejecutar la clase App (el servicio web de la clase fachada) se ejecutan los siguientes comandos en windows.
+Para la correcta instalaciÃ³n se debe primero clonar el repositorio como se indicÃ³ anteriormente, despuÃ©s se ingresa al directorio del proyecto y para ejecutar la clase App (el servicio web de la clase fachada) se ejecutan los siguientes comandos en windows.
 
 ```
 cd AREP-Taller-6
@@ -55,7 +55,7 @@ mvn javadoc:javadoc
 
 * [Java 8](https://www.java.com/es/about/whatis_java.jsp)
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [Spark Java](http://sparkjava.com/) - Framework de aplicaciï¿½n web.
+* [Spark Java](http://sparkjava.com/) - Framework de aplicaciÃ¯Â¿Â½n web.
 
 
 ## Wiki
@@ -70,5 +70,5 @@ Puedes encontrar mas de como utilizar este proyecto en nuestra [Wiki](https://gi
 
 ## Licencia
 
-Este proyecto está bajo la Licencia GNU General Public License - mira el archivo [LICENSE.txt](LICENSE.txt) para detalles
+Este proyecto estÃ¡ bajo la Licencia GNU General Public License - mira el archivo [LICENSE.txt](LICENSE.txt) para detalles
 
