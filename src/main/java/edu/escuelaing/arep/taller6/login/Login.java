@@ -8,6 +8,9 @@ import com.google.common.hash.Hashing;
 
 import spark.*;
 
+/**
+ * Class that manage the login system to the application
+ */
 public class Login {
 
 	/** Property login path. */
@@ -25,8 +28,8 @@ public class Login {
 	/**
 	 * Validates if an user is logged in
 	 * 
-	 * @param lr_request
-	 * @param lr_response
+	 * @param lr_request the request of the user
+	 * @param lr_response the response to the user
 	 */
 	public static void ensureUserIsLoggedIn(Request lr_request, Response lr_response) {
 		if (lr_request.session().attribute("currentUser") == null) {

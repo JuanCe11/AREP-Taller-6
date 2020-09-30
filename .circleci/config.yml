@@ -1,0 +1,12 @@
+version: 2.1
+
+general:
+  build_dir: LoadBalancer
+
+orbs:
+  maven: circleci/maven@0.0.12
+
+workflows:
+  maven_test:
+    jobs:
+      - maven/test # checkout, build, test, and upload test results

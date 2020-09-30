@@ -23,6 +23,9 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 
+/**
+ *	Class that reads an url and configure the trust store
+ */
 public class URLReader {
 
 	/**
@@ -69,6 +72,8 @@ public class URLReader {
 	 * Reads an response from the server
 	 * 
 	 * @param as_site url to read
+	 * @param lb_config if is necessary to config the trust store
+	 * @return A string with the body response 
 	 */
 	public static String readURL(String as_site, boolean lb_config) {
 		if (lb_config)

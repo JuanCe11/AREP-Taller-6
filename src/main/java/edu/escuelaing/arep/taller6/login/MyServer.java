@@ -14,6 +14,9 @@ import org.eclipse.jetty.util.StringUtil;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
+/**
+ * The front-end server class of the application 
+ */
 public class MyServer {
 
 	/**
@@ -25,7 +28,7 @@ public class MyServer {
 
 		port(getPort());
 		staticFiles.location("/public");
-		secure("keystores/ecikeystore.p12", "19990611", null, null);
+		secure("keystores/serverpair.p12", "123456", null, null);
 
 		get("/", (req, res) -> {
 			Map<String, Object> lm_model;

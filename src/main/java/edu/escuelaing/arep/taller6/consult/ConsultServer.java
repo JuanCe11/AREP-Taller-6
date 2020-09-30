@@ -11,6 +11,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * Class that connect to log service 
+ */
 public class ConsultServer {
 
 	/**
@@ -36,6 +39,7 @@ public class ConsultServer {
 	 * Reads an response from the server
 	 * 
 	 * @param as_site url to read
+	 * @return A string with the body response 
 	 */
 	public static String readURL(String as_site) {
 		String ls_resData;
